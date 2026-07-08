@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tentang — Lovefolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;800&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <audio id="bgm" src="assets/audio/love-song.mp3" loop preload="auto"></audio>
+
+  <div class="music">
+    <button id="musicBtn" class="btn btn-glass" aria-label="Toggle music">
+      <span class="dot"></span><span id="musicLabel">Play music</span>
+    </button>
+  </div>
+
+  <header class="nav">
+    <a class="brand" href="index.html" data-barba-link><span class="heart">♥</span> Lovefolio</a>
+    <nav class="menu">
+      <a href="index.html" data-barba-link>Home</a>
+      <a href="gifts.html" data-barba-link>Hadiah</a>
+      <a href="words.html" data-barba-link>Kata-kata</a>
+      <a class="active" href="about.html" data-barba-link>Tentang</a>
+    </nav>
+  </header>
+
+  <main data-barba="wrapper">
+    <div class="transition-overlay" id="overlay"></div>
+
+    <section data-barba="container" data-barba-namespace="about" class="page">
+      <div class="page-head">
+        <h1 class="page-title">Tentang website ini</h1>
+        <p class="page-subtitle">Static HTML + animasi modern + vibes romantis.</p>
+      </div>
+
+      <section class="about">
+        <div class="card pad">
+          <h2 style="margin-top:0;">Kenapa dibuat?</h2>
+          <p style="color:var(--muted); font-weight:700; line-height:1.7;">
+            Karena ada orang yang layak dirayakan dengan sesuatu yang dibuat dengan niat.
+          </p>
+        </div>
+
+        <div class="card pad">
+          <h2 style="margin-top:0;">Sa</h2>
+          <ul class="list">
+            <li></li>
+            <li>Ganti musik: `assets/audio/love-song.mp3`</li>
+            <li>Ganti kata-kata: buka `words.html`</li>
+            <li>Caption slide: buka `gifts.html`</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <a class="btn btn-primary" href="index.html" data-barba-link>Back to Home</a>
+        <span>@Muarsya</span>
+      </footer>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="assets/js/transitions.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Surprise — Lovefolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;800&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <audio id="bgm" src="assets/audio/love-song.mp3" loop preload="auto"></audio>
+
+  <div class="music">
+    <button id="musicBtn" class="btn btn-glass" aria-label="Toggle music">
+      <span class="dot"></span><span id="musicLabel">Play music</span>
+    </button>
+  </div>
+
+  <header class="nav">
+    <a class="brand" href="index.html" data-barba-link><span class="heart">♥</span> Lovefolio</a>
+    <nav class="menu">
+      <a href="index.html" data-barba-link>Home</a>
+      <a class="active" href="gifts.html" data-barba-link>Surprise</a>
+      <a href="words.html" data-barba-link>Romantic phrases</a>
+      
+    </nav>
+  </header>
+
+  <main data-barba="wrapper">
+    <div class="transition-overlay" id="overlay"></div>
+
+    <section data-barba="container" data-barba-namespace="gifts" class="page">
+      <div class="page-head">
+        <h1 class="page-title">Kejutan Kecil</h1>
+        <p class="page-subtitle"></p>
+      </div>
+
+      <div class="slider">
+        <div class="slider-top">
+          <strong>Love You Karena</strong>
+          <span class="hint"></span>
+        </div>
+
+        <div class="slide active">
+          <img src="assets/img/photo1.jpeg" alt="Hadiah 1">
+          <p class="slide-caption">“Aku suka caramu membuat semuanya terasa cukup”</p>
+        </div>
+        <div class="slide">
+          <img src="assets/img/photo2.jpeg" alt="Hadiah 2">
+          <p class="slide-caption">“aku mau kamu tetap di sini”</p>
+        </div>
+        <div class="slide">
+          <img src="assets/img/photo3.jpeg" alt="Hadiah 3">
+          <p class="slide-caption">“Kamu rumah paling hangat”</p>
+        </div>
+        <div class="slide">
+          <img src="assets/img/photo4.jpeg" alt="Hadiah 4">
+          <p class="slide-caption">“Aku sayang kamu, pelan-pelan tapi pasti”</p>
+        </div>
+        <div class="slide">
+          <img src="assets/img/photo5.jpeg" alt="Hadiah 5">
+          <p class="slide-caption">“Aku bangga punya kamu”</p>
+        </div>
+        <div class="slide">
+          <img src="assets/img/photo6.jpeg" alt="Hadiah 6">
+          <p class="slide-caption">“Senyummu bikin dunia jadi lembut”</p>
+        </div>
+        <div class="slide">
+          <img src="assets/img/photo7.jpeg" alt="Hadiah 7">
+          <p class="slide-caption">“Kamu kejutan terbaik”</p>
+        </div>
+        <div class="slide">
+          <img src="assets/img/photo8.jpeg" alt="Hadiah 8">
+          <p class="slide-caption">“Aku mau jadi orang yang bikin kamu tenang”</p>
+        </div>
+        <div class="slide">
+          <img src="assets/img/photo9.jpeg" alt="Hadiah 9">
+          <p class="slide-caption">“Peluk kamu = aman”</p>
+        </div>
+        <div class="slide">
+          <img src="assets/img/photo10.jpeg" alt="Hadiah 10">
+          <p class="slide-caption">“Ini baru awal cerita kita”</p>
+        </div>
+
+        <div class="slider-actions">
+          <button class="btn btn-outline" id="prevSlide">Prev</button>
+          <button class="btn btn-primary" id="nextSlide">Next</button>
+          
+        </div>
+      </div>
+
+      <footer class="footer">
+        <a class="btn btn-outline" href="index.html" data-barba-link>Back</a>
+        <span>Muarsya</span>
+      </footer>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="assets/js/transitions.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

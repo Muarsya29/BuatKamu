@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Romantic phrases — Lovefolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;800&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <audio id="bgm" src="assets/audio/love-song.mp3" loop preload="auto"></audio>
+
+  <div class="music">
+    <button id="musicBtn" class="btn btn-glass" aria-label="Toggle music">
+      <span class="dot"></span><span id="musicLabel">Play music</span>
+    </button>
+  </div>
+
+  <header class="nav">
+    <a class="brand" href="index.html" data-barba-link><span class="heart">♥</span> Lovefolio</a>
+    <nav class="menu">
+      <a href="index.html" data-barba-link>Home</a>
+      <a href="gifts.html" data-barba-link>Surprise</a>
+      <a class="active" href="words.html" data-barba-link>romantic phrases</a>
+      
+    </nav>
+  </header>
+
+  <main data-barba="wrapper">
+    <div class="transition-overlay" id="overlay"></div>
+
+    <section data-barba="container" data-barba-namespace="words" class="page">
+      <div class="page-head">
+        <h1 class="page-title">untuk kamu Sayang</h1>
+        <p class="page-subtitle">Yang Terlintas  Dihatiku</p>
+      </div>
+
+      <section class="romantic-box">
+        <h2 style="margin:0;">Untuk kamu</h2>
+        <div class="love-notes" id="loveNotes">
+          <p>1) “Makasih udah hadir dan bikin hari-hariku lebih hidup.”</p>
+          <p>2) “Aku sayang kamu, bukan karena sempurna—tapi karena kamu kamu.”</p>
+          <p>3) “Kalau lagi capek, ingat ya... kamu nggak sendirian. Ada aku.”</p>
+          <p>4) “Aku mau jadi orang yang selalu kamu cari pas dunia lagi berat.”</p>
+          <p>5) “Aku pilih kamu, hari ini… besok… dan seterusnya.”</p>
+          <p>6) "Kalau suatu hari dunia berpihak pada semua orang kecuali aku, asal masih ada kamu, itu sudah lebih dari cukup"</p>
+          <p>7) "Aku ingin menjadi alasan di balik senyummu, sebagaimana kamu menjadi alasan di balik tenangnya hatiku"</p>
+          <p>8) "Semoga kita tetap saling memilih, meski nanti banyak hal berubah"</p>
+          <p>9) "Aku harap kita nggak cuma bertahan saat semuanya baik-baik saja, tapi juga saling menguatkan saat semuanya terasa berat"</p>
+          <p>10) "Semoga kita bukan sekadar saling jatuh cinta, tetapi juga saling bertahan saat cinta sedang diuji"</p>
+        </div>
+
+        <div class="note-actions">
+          <button class="btn btn-primary" id="addLineBtn">Add a sweet sentence</button>
+          <button class="btn btn-outline" id="surpriseBtn">a little surprise</button>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <a class="btn btn-outline" href="gifts.html" data-barba-link>Back</a>
+        <span>♥</span>
+      </footer>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="assets/js/transitions.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
